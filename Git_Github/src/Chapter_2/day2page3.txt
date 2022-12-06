@@ -3,3 +3,9 @@ There is no Spoon!
 This is a first try to push something from GitHub to computer...
 
 Let me try.
+
+Mission succeeded.
+
+Adding more text.
+
+And try again.
