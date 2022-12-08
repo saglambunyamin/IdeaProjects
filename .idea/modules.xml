@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Git_Github/Git_Github.iml" filepath="$PROJECT_DIR$/Git_Github/Git_Github.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/IdeaProjects.iml" filepath="$PROJECT_DIR$/.idea/IdeaProjects.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaPractice/JavaPractice.iml" filepath="$PROJECT_DIR$/JavaPractice/JavaPractice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaProgammingReviews_EU10/JavaProgammingReviews_EU10.iml" filepath="$PROJECT_DIR$/JavaProgammingReviews_EU10/JavaProgammingReviews_EU10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JavaProgramming/JavaProgramming.iml" filepath="$PROJECT_DIR$/JavaProgramming/JavaProgramming.iml" />
+    </modules>
+  </component>
+</project>
