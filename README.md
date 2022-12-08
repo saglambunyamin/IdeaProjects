@@ -2,6 +2,8 @@
 
 Do more than you ever thought possible. Start the journey to your **high paying IT job**.
 
+![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=saglambunyamin=contribs,prs)
+
 ![think positively](https://user-images.githubusercontent.com/112425162/206287775-f9560cbb-8d27-49b4-a6fa-f137ba01510c.jpg)
 
 ![4e99604097f7305eaa8d115b4b2cb1ea](https://user-images.githubusercontent.com/111069549/198830325-850034a3-7940-421a-8a60-5133b74e2a2b.gif)
