@@ -29,7 +29,7 @@ public class Car {
                 "Brand: '" + brand + '\'' +
                 ", Model: '" + model + '\'' +
                 ", Year: " + year +
-                ", Price: " + price +
+                ", Price: $ " + price +
                 ", Color: '" + color + '\'' +
                 ", Miles: " + miles +
                 '}';
