@@ -9,7 +9,8 @@ public class Rectangle extends Shape {
     }
     public void setLength(double length) {
         if (length <= 0) {
-            System.err.println("Invalid side value: " + length);
+            System.err.println("Invalid length value: " + length);
+            System.exit(1);
         }
         this.length = length;
     }
@@ -18,7 +19,8 @@ public class Rectangle extends Shape {
     }
     public void setWidth(double width) {
         if (width <= 0) {
-            System.err.println("Invalid side value: " + width);
+            System.err.println("Invalid width value: " + width);
+            System.exit(1);
         }
         this.width = width;
     }

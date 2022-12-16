@@ -9,6 +9,7 @@ public class Square extends Shape {
     public void setSide(double side) {
         if (side <= 0) {
             System.err.println("Invalid side value: " + side);
+            System.exit(1);
         }
         this.side = side;
     }
@@ -30,8 +31,8 @@ public class Square extends Shape {
 
     @Override
     public String toString() {
-        return "Square{" +
-                "Side: " + side +
+        return "Square{" + '\'' +
+                "Side: " + side + '\'' +
                 "Area: '" + area() + '\'' +
                 "Perimeter: '" + perimeter() + '\'' +
                 '}';
