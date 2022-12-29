@@ -1,6 +1,6 @@
 package day38_Inheritance.BrowserTask;
 
-public class BrowserObjects extends Browser {
+public class BrowserObjects {
     public static void main(String[] args) {
 
         Browser chrome = new Browser();
