@@ -1,6 +1,6 @@
 package day45_Abstraction.Shape;
 
-public class Cylinder extends Shape {
+public class Cylinder extends Shape implements Volume {
     private double radius;
     private double height;
 
@@ -42,6 +42,8 @@ public class Cylinder extends Shape {
     public double volume () {
         return (2*3.14*radius*radius*height) ;
     }
+
+
 
     @Override
     public String toString() {
