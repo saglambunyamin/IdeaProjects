@@ -36,7 +36,10 @@ public class IterablePractice {
             }
         }
         System.out.println("list2 = " + list2);
+        System.out.println("==================================================");
 
-
+        List<Integer> list3 = new ArrayList<>(Arrays.asList(1,2,3,4,5,1,2,3,4,5,1,2,3,4,5));
+        list3.removeIf(  each -> each < 4   );
+        System.out.println("list3 = " + list3);
     }
 }
