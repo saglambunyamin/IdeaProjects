@@ -24,6 +24,7 @@ public class MapPractice4 {
         System.out.println(groups);
 
         System.out.println(groups.get(2).get(1));
+
         System.out.println("-------------------------------------------------------------");
 
         for (ArrayList<String> eachGroup : groups.values()) {
