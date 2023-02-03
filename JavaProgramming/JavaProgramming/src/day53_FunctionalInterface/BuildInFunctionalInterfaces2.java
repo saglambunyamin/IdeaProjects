@@ -1,7 +1,8 @@
 package day53_FunctionalInterface;
 
-import java.util.Arrays;
+import java.util.*;
 import java.util.function.BiConsumer;
+import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 
 public class BuildInFunctionalInterfaces2 {
@@ -47,6 +48,55 @@ public class BuildInFunctionalInterfaces2 {
 
         System.out.println("==================================================");
 
+        Map<String, String> scrumTeam1 = new LinkedHashMap<>();
+        scrumTeam1.put("Abdulhamid","SM");
+        scrumTeam1.put("Nikita","Developer");
+        scrumTeam1.put("Alina","Developer");
+        scrumTeam1.put("Mert","PO");
+        scrumTeam1.put("Lee","SDET");
+
+        scrumTeam1.forEach(  (k, v) -> System.out.println(k+" : "+v) );
+
+        System.out.println("==================================================");
+
+        //1. create a function that takes two integers and returns the maximum integer
+        BiFunction<Integer, Integer, Integer> maxNum = (a, b) -> (a>b)?a:b;
+
+        int max = maxNum.apply(100, 200);
+        System.out.println(max);
+
+        System.out.println("==================================================");
+
+        //2. create a function that can merge two integer arrays into a list
+        BiFunction<int[], int[], List<Integer>> merge = (x, y) -> {
+            List<Integer> result = new ArrayList<>();
+            for (int each : x) result.add(each);
+            for( int each: y) result.add(each);
+            return result;
+        };
+
+        int[] arr1 = {1,2,3,4,5};
+        int[] arr2 = {6,7,8};
+
+        List<Integer> nums = merge.apply(arr1, arr2);
+        System.out.println("nums = " + nums);
+
+        System.out.println("==================================================");
+
+        // 3. create a function that takes a  list of String and a list of Integer and merge them into a map
+        BiFunction<List<String>, List<Integer>, Map<String, Integer>>  merge2 = (j, k) ->{
+            Map<String, Integer> map = new HashMap<>();
+            for (int i = 0; i < j.size(); i++) {
+                map.put( j.get(i),  k.get(i));
+            }
+            return map;
+        };
+
+        List<String> names = new ArrayList<>(Arrays.asList("Layan", "Kseniia", "Aygun"));
+        List<Integer> scores = new ArrayList<>(Arrays.asList(90, 95, 98));
+
+        Map<String, Integer> students = merge2.apply(names, scores);
+        System.out.println(students);
 
 
     }
